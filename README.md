@@ -5,8 +5,8 @@
 This build is on a customized version of AOSP based on `android-4.2.2_r1`
 The activity `Tentament` is poised to run after `SetupWizardActivity`.
 `SetupWizardActivity` helps the user set up his Google account and various
-settings. It comes bundled with the other various google apps like `Play
-Store`, `Gmail`, and `Maps`.
+settings. It comes bundled with the other various google apps like Play
+Store, Gmail, and Maps.
 
     <activity
         android:name=".tutorial.Tentament"
@@ -25,8 +25,9 @@ Store`, `Gmail`, and `Maps`.
 
 The above portion is similar to how `SetupWizardActivity` is launched in its
 AndroidManifest.xml.  The XML file was reconstructed using dex2jar and jd-gui
-on the bundled google apps. The XML files also bear similarity to the
-AndroidManifest.xml file for `packages/apps/Provision/AndroidManifest.xml`:
+on the bundled google apps. The XML files also bears similarity to the
+AndroidManifest.xml file for `packages/apps/Provision/AndroidManifest.xml`
+included in AOSP:
 
     <activity
         android:theme="@style/InvisibleNoTitle"
@@ -43,12 +44,15 @@ AndroidManifest.xml file for `packages/apps/Provision/AndroidManifest.xml`:
         </intent-filter>
     </activity>
 
+I've also included the manifest file for `SetupWizardActivity` and other google
+apps as `SetupWizard.AndroidManifest.xml` at the root of this repository.
+
 After `SetupWizardActivity`, `Tentament` ends up running and exits.
-SetupWizardActivity gets called again, and then the device gets stuck while
+`SetupWizardActivity` gets called again, and then the device gets stuck while
 in `SetupWizardActivity` again. Some buttons on the device are enabled but I
-end up being stuck in `SetupWizardActivity`. I cannot get out of it without
-locking the phone and then unlocking, along with some other strange combination
-of keys to get to the home screen.
+end up being stuck in `SetupWizardActivity` with a black screen. I cannot get
+out of it without locking the phone, unlocking, along with some other strange
+combination of keys to get to the home screen.
 
 Further information is included in the file [boot.log](boot.log) at the root of
 this repository. The messages were filtered using 
