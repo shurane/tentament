@@ -1,0 +1,73 @@
+I/PackageManager(  513): /system/app/SetupWizard.apk changed; collecting certs
+I/PackageManager(  513): /system/app/Tentament.apk changed; collecting certs
+W/PackageManager(  513): Unknown permission android.permission.READ_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  513): Unknown permission android.permission.WRITE_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  513): Unknown permission android.permission.READ_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  513): Unknown permission android.permission.WRITE_OWNER_DATA in package com.google.android.setupwizard
+I/ActivityManager(  513): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.google.android.setupwizard/.SetupWizardActivity} from pid 0
+I/ActivityManager(  513): Start proc com.google.android.setupwizard for activity com.google.android.setupwizard/.SetupWizardActivity: pid=999 uid=10054 gids={50054, 3003, 1028}
+I/PackageManager(  513): Running dexopt on: com.google.android.setupwizard
+I/SetupWizard(  999): SetupWizardActivity.onCreate(null) LTE == false userID=0
+D/SetupWizard(  999): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+D/SetupWizard(  999): DEVICE_PROVISIONED=false
+D/SetupWizard(  999): startWelcomeActivity() lastActivity=0
+I/SetupWizard(  999): starting activity 10001
+I/SetupWizard(  999): SetupWizardActivity.onCreate() completed
+I/ActivityManager(  513): START u0 {cmp=com.google.android.setupwizard/.WelcomeActivity (has extras)} from pid 999
+I/SetupWizard(  999): PrepayDetectionService.onStartCommand()
+I/SetupWizard(  999): starting prepay detection thread
+I/SetupWizard(  999): ending prepay detection: not LTE
+I/SetupWizard(  999): setting prepay status to 1
+D/SetupWizard(  999): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+I/SetupWizard(  999): initializing locale to en_US == en_US (15 of 60)
+I/ActivityManager(  513): Displayed com.google.android.setupwizard/.WelcomeActivity: +8s47ms (total +15s301ms)
+I/SetupWizard(  999): onActivityResult(10001, 0) lastActivity=10001
+I/SetupWizard(  999): onWelcomeScreenCompleted()
+V/SetupWizard(  999): skipping activation for wifi-only build
+V/SetupWizard(  999): no network or lte prepay required: launching wifi
+I/SetupWizard(  999): starting activity 10004
+V/SetupWizard(  999): SetupWizardActivity.onDestroy()
+I/SetupWizard(  999): onActivityResult(10004, 0) lastActivity=10004
+I/SetupWizard(  999): starting activity 10005
+I/ActivityManager(  513): START u0 {cmp=com.google.android.setupwizard/.LocationSharingActivity (has extras)} from pid 999
+D/SetupWizard(  999): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+I/ActivityManager(  513): Displayed com.google.android.setupwizard/.LocationSharingActivity: +251ms
+W/ActivityManager(  513): Activity pause timeout for ActivityRecord{41733150 u0 com.google.android.setupwizard/.LocationSharingActivity}
+I/SetupWizard(  999): onActivityResult(10005, -1) lastActivity=10005
+I/SetupWizard(  999): starting activity 10018
+I/ActivityManager(  513): START u0 {cmp=com.google.android.setupwizard/.DateTimeSetupActivity (has extras)} from pid 999
+D/SetupWizard(  999): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+I/ActivityManager(  513): Displayed com.google.android.setupwizard/.DateTimeSetupActivity: +239ms
+I/SetupWizard(  999): onActivityResult(10018, -1) lastActivity=10018
+I/SetupWizard(  999): starting activity 10010
+I/SetupWizard(  999): onActivityResult(10010, -1) lastActivity=10010
+I/SetupWizard(  999): starting activity 10013
+I/ActivityManager(  513): START u0 {cmp=com.google.android.setupwizard/.NoAccountTosActivity (has extras)} from pid 999
+D/SetupWizard(  999): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+I/ActivityManager(  513): Displayed com.google.android.setupwizard/.NoAccountTosActivity: +168ms
+I/SetupWizard(  999): onActivityResult(10013, -1) lastActivity=10013
+I/SetupWizard(  999): starting activity 10012
+I/ActivityManager(  513): START u0 {cmp=com.google.android.setupwizard/.SetupCompleteActivity (has extras)} from pid 999
+D/SetupWizard(  999): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+I/ActivityManager(  513): Displayed com.google.android.setupwizard/.SetupCompleteActivity: +102ms
+I/SetupWizard(  999): onActivityResult(10012, -1) lastActivity=10012
+I/SetupWizard(  999): mabyeStartPrepaySetup()
+I/SetupWizard(  999): is not LTE
+V/SetupWizard(  999): System thinks we're the home activity. Removing SetupWizard...
+I/ActivityManager(  513): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.wiccan/.tutorial.Tentament} from pid 999
+V/SetupWizard(  999): *** SetupWizard completed ***
+I/StatusBarManagerService(  513): binder died for pkg=com.google.android.setupwizard
+I/WindowState(  513): WIN DEATH: Window{418496b8 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity}
+I/StatusBarManagerService(  513): binder died for pkg=com.google.android.setupwizard
+I/StatusBarManagerService(  513): binder died for pkg=com.google.android.setupwizard
+I/StatusBarManagerService(  513): binder died for pkg=com.google.android.setupwizard
+I/StatusBarManagerService(  513): binder died for pkg=com.google.android.setupwizard
+I/ActivityManager(  513): Process com.google.android.setupwizard (pid 999) has died.
+I/ActivityManager(  513): Start proc com.wiccan for activity com.wiccan/.tutorial.Tentament: pid=1772 uid=10059 gids={50059, 3003, 1015, 1028}
+E/Tentament( 1772): TENTAMENT got this far, now FINISHing
+I/ActivityManager(  513): Start proc com.google.android.setupwizard for activity com.google.android.setupwizard/.SetupWizardActivity: pid=1786 uid=10054 gids={50054, 3003, 1028}
+I/SetupWizard( 1786): SetupWizardActivity.onCreate(icicle) LTE == false userID=0
+D/SetupWizard( 1786): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+W/SetupWizard( 1786): skip disabling notfictions due to isHomeActivity() == false
+D/SetupWizard( 1786): DEVICE_PROVISIONED=true
+I/SetupWizard( 1786): SetupWizardActivity.onCreate() completed
