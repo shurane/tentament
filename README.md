@@ -1,6 +1,5 @@
 
-#Test Activity to demonstrate a problem with the following issue regarding
-`AndroidManifest.xml`
+#Test Activity to demonstrate a problem with 'DEVICE_INITIALIZATION_WIZARD' intent.
 
 This build is on a customized version of AOSP based on `android-4.2.2_r1`
 The activity `Tentament` is poised to run after `SetupWizardActivity`.
