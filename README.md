@@ -73,3 +73,5 @@ What I have noticed is that if `android:priority="1"` is increased to a value
 over 5, like `android:priority="10"`, `Tentament` ends up running before
 `SetupWizardActivity` and then no issues arise. Priority just handles the order
 that the apps are launched, as far as I can tell. 
+
+If extra information is needed, just say the word.
